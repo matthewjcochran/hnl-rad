@@ -1,0 +1,31 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 16pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16pt;
+}
+
+@media (max-width: 600px) {
+     .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.item {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;}
